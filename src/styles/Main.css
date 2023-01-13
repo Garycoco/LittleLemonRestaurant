@@ -166,4 +166,41 @@
     }
 }
 
+.customers-say {
+    margin-top: 4rem;
+    background: var(--secondary3);
+    align-items: center;
+    padding: 2rem 0;
+}
+.customers-say h3 {
+    margin-left: auto;
+    text-align: center;
+}
+.customers-say .testimonials {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.testimonials .customers {
+    flex: 1;
+    height: 10rem;
+    background-color: #EE9972;
+    margin: 3rem 0;
+}
+.about-container {
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-container .about-right {
+    flex: 1;
+    display: inline-flex;
+}
+.about-container .about-left {
+    flex: 1;
+}
+
 
