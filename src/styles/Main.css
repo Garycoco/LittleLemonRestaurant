@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     color: white;
+    height: 75vh;
 
 }
 .left {
@@ -26,16 +27,21 @@
     color: var(--primary-light);
 }
 .right {
-    width: 300px;
-    height: 350px;
+    min-width: 13rem;
+    min-height: 12rem;
+    display: flex;
     background-color: #EDEFEE;
-    background-image: url(../assets/images/restauranfood.jpg);
-    background-position: center;
-    background-size: cover;
     border-radius: 30px;
     position: absolute;
-    top: 15%;
+    top: 7rem;
     left: 68%;
+}
+.right img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
 }
 
 .left h1, h2 {
@@ -69,7 +75,6 @@
     flex-wrap: wrap;
     flex: 1;
     background-color: var(--secondary3);
-    margin: 18px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
@@ -118,11 +123,41 @@
     flex: 1;
     width: 80%;
     margin: 0 auto;
+    column-gap: 2rem;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
     .card-container, .specials-bottom {
         flex-direction: column;
+        min-width: 95%;
+        align-items: center;
+        justify-content: center;
+    }
+    .specials-bottom {
+        row-gap: 2rem;
+    }
+    .specials-top {
+        align-items: center;
+        justify-content: center;
+        min-width: 95%;
+
+    }
+    .right {
+        display: none;
+    }
+    .left {
+        min-width: 100%;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .right {
+        display: none;
+    }
+}
+@media screen and (max-width: 1193px) {
+    .right {
+        top: 9rem;
     }
 }
 

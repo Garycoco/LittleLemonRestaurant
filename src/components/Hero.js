@@ -1,5 +1,5 @@
 import "../styles/Main.css";
-import salad from "../assets/images/salad.jpg";
+import food from "../assets/images/restauranfood.jpg";
 
 const Hero = () => {
     return (
@@ -12,6 +12,7 @@ const Hero = () => {
                 <a className="btn" type="button">Reserve a Table</a>
             </div>
             <div className="right">
+                <img src={food} alt="restaurantfood" />
             </div>
         </div>
     </div>

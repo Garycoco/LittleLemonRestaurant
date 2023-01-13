@@ -3,32 +3,77 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: white;
 }
 
 .logo-img {
     width: 200px;
+    position: relative;
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-weight: bold;
+    margin: 0 auto;
+    min-width: 80%;
+    position: relative;
 }
-.nav-menu ul {
-    display: flex;
+.nav-items ul {
+    display: inline-flex;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
-.nav-menu li {
+.nav-items li {
     padding: 0 15px;
 }
 
-.nav-menu li a:hover {
+.nav-items li a:hover {
     color: #495e57;
 }
-
-.hamburger, .close-hamburger {
+.hamburger {
     display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-menu {
+        justify-content: space-between;
+        min-width: 100%;
+    }
+    .nav-items ul {
+        display: block;
+        padding: 1rem 0;
+    }
+    .hamburger {
+        display: inline-flex;
+    }
+    header {
+        min-width: 100%;
+        padding: 1rem;
+        position: fixed;
+        background-color: white;
+    }
+    .hamburger {
+        margin: 0 1rem 0 0;
+    }
+    .nav-items{
+        position: fixed;
+        height: 100vh;
+        width: 200px;
+        background-color: white;
+        top: 80px;
+        right: -200px;
+        text-align: left;
+        transition: 1s;
+        display: flex;
+    }
+    .active {
+        right: 0px;
+    }
 }
