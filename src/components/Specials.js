@@ -9,7 +9,7 @@ const Specials = () => {
     })
     return (
         <>
-            <div className="specials-top">
+            <div className="specials-top" id="specials">
                 <h2>This Weeks specials!</h2>
                 <button type="button" className="btn">Online Menu</button>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../assets/images/logo.png";
 import "../styles/Header.css";
 import { useState } from "react";
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Header = () => {
     const [clicked, setClicked] = useState(false);
@@ -12,16 +12,15 @@ const Header = () => {
     return (
         <>
             <header>
-
                 <nav className="nav-menu">
                     <img className="logo-img" alt="restaurant logo" src={logo} />
                     <div className={clicked ? "nav-items active" : "nav-items"}>
                         <ul>
-                            <li><NavLink to="/">Home</NavLink></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Reservations</a></li>
-                            <li><a href="#">Order Online</a></li>
-                            <li><a href="#">Login</a></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/specials">About</Link></li>
+                            <li><Link to="">Reservations</Link></li>
+                            <li><NavLink to="/booking">Order Online</NavLink></li>
+                            <li><Link to="/">Login</Link></li>
                         </ul>
                     </div>
                     <div className="hamburger">
