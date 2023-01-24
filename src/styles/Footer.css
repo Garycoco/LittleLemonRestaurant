@@ -1,6 +1,6 @@
 footer {
     background: var(--secondary3);
-    padding: 3rem 0;
+    padding: 3rem 0 1rem 0;
 }
 .footer-container {
     width: 80%;

@@ -5,15 +5,13 @@ import Main from './components/Main';
 import { Route, Routes } from 'react-router-dom';
 import Bookings from './components/Bookings';
 import Footer from './components/Footer';
+import Routing from './components/Routes';
 
 function App() {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path='/' element={<Main />} />
-        <Route path='/booking' element={<Bookings />} />
-      </Routes>
+      <Routing />
       <Footer />
     </>
   );

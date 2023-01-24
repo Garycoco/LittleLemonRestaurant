@@ -1,7 +1,7 @@
 const About = () => {
 
     return (
-        <div className="about-container">
+        <div className="about-container" id="about">
             <div className="about-left">
                 <h2>Little Lemon</h2>
                 <h3 style={{ margin: "1rem 0" }}>Chicago</h3>

@@ -35,7 +35,7 @@ header {
 }
 
 .nav-items li a:hover {
-    color: #495e57;
+    color: var(--primary-light);
 }
 .hamburger {
     display: none;
@@ -48,7 +48,10 @@ header {
     }
     .nav-items ul {
         display: block;
-        padding: 1rem 0;
+    }
+    .nav-items li {
+        padding: 0;
+        margin-top: 20px;
     }
     .hamburger {
         display: inline-flex;

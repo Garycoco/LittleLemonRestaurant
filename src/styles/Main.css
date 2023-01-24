@@ -203,4 +203,17 @@
     flex: 1;
 }
 
+.formContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.formPage h2 {
+    text-align: center;
+}
+.formContainer input, select {
+    padding: 10px;
+}
+
 
