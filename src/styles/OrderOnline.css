@@ -1,0 +1,9 @@
+.container{
+    min-height: 70vh;
+    background-image: url("../assets/images/mario_and_adrian2.jpg");
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

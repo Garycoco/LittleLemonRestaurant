@@ -2,7 +2,7 @@ import React from "react";
 import BookingsForm from "./BookingsForm";
 import "../styles/Main.css";
 import {useReducer} from 'react';
-import { fetchAPI } from "../bookingsAPI";
+import { fetchAPI, submitAPI } from "../bookingsAPI";
 import image from "../assets/images/restaurant.jpg";
 
 export default function Bookings() {
@@ -10,6 +10,9 @@ export default function Bookings() {
         return (
             fetchAPI(date)
         );
+    }
+    function submitForm(formData) {
+        submitAPI(formData)
     }
 
     const output = fetchAPI(new Date());
@@ -21,7 +24,7 @@ export default function Bookings() {
             <div className="formPage">
                 <img src={image} style={{maxHeight: "300px", width: "100%", objectFit: "cover", objectPosition: "center"}} alt="food"></img>
                 <h2>Book a table</h2>
-                <BookingsForm availableTimes={availableTimes} updateTimes={dispatch}/>
+                <BookingsForm availableTimes={availableTimes} updateTimes={dispatch} submitForm={submitForm}/>
             </div>
         </>
         );

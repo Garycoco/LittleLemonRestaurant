@@ -1,3 +1,7 @@
+import Image from "../assets/images/mario_and_adrian1.jpg";
+import Image1 from "../assets/images/mario_and_adrian2.jpg";
+
+
 const About = () => {
 
     return (
@@ -5,10 +9,16 @@ const About = () => {
             <div className="about-left">
                 <h2>Little Lemon</h2>
                 <h3 style={{ margin: "1rem 0" }}>Chicago</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, libero nam laborum non architecto dignissimos placeat corporis fugit ullam enim accusamus obcaecati necessitatibus exercitationem adipisci temporibus! Voluptatem omnis eligendi ullam unde aut vero dolore nemo molestiae quos amet quis ducimus, eum quo, quae libero molestias culpa deserunt eveniet maiores, enim nulla laborum fugiat! Accusamus, veniam! praesentium magni perferendis! Facilis tempore eum mollitia maiores quibusdam aspernatur laudantium labore doloribus iure deserunt, quo quidem.</p>
+                <p>Little Lemon opened in 1995 by two Italian brothers, Adrian and Mario. 
+                Despite the city's diversity, the two brothers recognized the lack of Mediterranean cuisine in Chicago, 
+                and were inspired to bring the flavors of their hometown in Italy to the people of Chicago. The two brothers 
+                continue to oversee the Little Lemon restaurant, nearly thirty years later.</p>
             </div>
             <div className="about-right">
-
+                <div style={{width: "100%", alignItems: "center", marginLeft: "20px"}}>
+                    <img style={{width: "200px", height: "250px", borderRadius: "20px", top: "30px"}} src={Image} alt="mario and adrian" />
+                    <img style={{width: "200px", height: "250px", position: "relative", borderRadius: "20px", right: "20px", bottom: "40px"}} src={Image1} alt="mario and adrian" />
+                </div>
             </div>
         </div>
     );

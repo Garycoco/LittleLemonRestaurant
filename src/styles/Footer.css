@@ -5,7 +5,6 @@ footer {
 .footer-container {
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
 }
 .footer-container >* {
@@ -21,6 +20,13 @@ footer {
 }
 .item ul {
     list-style: none;
+}
+.item ul li {
+    cursor: pointer;
+    margin: 10px 0;
+}
+.item ul li:hover {
+    color: #F4CE14;
 }
 
 @media screen and (max-width: 768px) {

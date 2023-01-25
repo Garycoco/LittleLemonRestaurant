@@ -6,13 +6,10 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [clicked, setClicked] = useState(false);
-    const [option, setOption] = useState(false);
     const handleHambugerClick = () => {
         setClicked(!clicked);
     }
-    const handleOptionClick = () => {
-        setOption(!option)
-    }
+
     return (
         <>
             <header>
@@ -23,8 +20,8 @@ const Header = () => {
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/">About</Link></li>
                             <li><Link to="/booking">Reservations</Link></li>
-                            <li><Link to="/">Order Online</Link></li>
-                            <li><Link to="/">Login</Link></li>
+                            <li><Link to="/orderOnline">Order Online</Link></li>
+                            <li><Link to="/login">Login</Link></li>
                         </ul>
                     </div>
                     <div className="hamburger">

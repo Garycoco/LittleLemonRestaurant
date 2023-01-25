@@ -21,11 +21,12 @@ const BookingsForm = props => {
 
         setTime(props.availableTimes.map((times) => <option>{times}</option>));
     }
+
     return (
         <div className="formContainer">
             <form style={{display: "flex", flexDirection: "column" , margin: "1rem 2rem", gap: "20px"}}>
 
-                <label htmlFor="res-date">Choose date</label>
+11               <label htmlFor="res-date">Choose date</label>
                 <input type="date" id="res-date" value={date} onChange={handleDate} required/>
                 
                 <label htmlFor="res-time">Choose time</label>
@@ -49,7 +50,7 @@ const BookingsForm = props => {
 
                 <p>Note: You cannot edit your reservation after submission. Please double-check your answer
                    before submitting your reservation request.</p>
-                <Link className="submit btn" to="/confirmation" style={{maxWidth: "250px", margin: "20px auto 100px auto"}}>Make reservation</Link>
+                <Link className="submit btn" style={{maxWidth: "250px", margin: "20px auto 100px auto"}} to={props.submitForm ? "/confirmation" : ""}>Make reservation</Link>
             </form>
         </div>
 )}

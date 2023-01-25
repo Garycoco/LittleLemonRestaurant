@@ -22,17 +22,17 @@ const Footer = () => {
                     <div className="item">
                         <h3>Contacts</h3>
                         <ul>
-                            <li>Address</li>
-                            <li>Phone Number</li>
-                            <li>Email</li>
+                            <li>2395 Maldove Way,<br/>Chicao Illinois</li>
+                            <li>(629)-243-6827</li>
+                            <li>LittleLemon@restaurant.com</li>
                         </ul>
                     </div>
                     <div className="item">
-                    <h3>Social Media Links</h3>
+                        <h3>Social Media Links</h3>
                         <ul>
-                            <li>Address</li>
-                            <li>Phone Number</li>
-                            <li>Email</li>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
                         </ul>
                     </div>
                 </div>

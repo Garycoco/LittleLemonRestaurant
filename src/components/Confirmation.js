@@ -12,7 +12,7 @@ export default function Confirmation() {
                 <h4 style={{marginTop: "20px"}}>A confirmation message has been sent to your email.</h4>
                 <h4>Thanks for dining with us!</h4>
                 <div style={{margin: "40px 0"}}>
-                    <Link style={{ marginRight: "20px" }} className="btn" to="/order">Order Online</Link>
+                    <Link style={{ marginRight: "20px" }} className="btn" to="/orderOnline">Order Online</Link>
                     <Link className="btn" to="/" >Home Page</Link>
                 </div>
             </div>
